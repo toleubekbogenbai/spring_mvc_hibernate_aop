@@ -1,6 +1,7 @@
 package com.toleubekbogenbai.spring.mvc_hibernate_aop.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 
 @Entity
 @Table(name = "employees")
@@ -9,16 +10,19 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
+    @NotBlank(message = "Обязательное поле")
     @Column(name = "name")
     private String name;
+    @NotBlank(message = "Обязательное поле")
     @Column(name = "surname")
     private String surname;
+    @NotBlank(message = "Укажите департамент")
     @Column(name = "department")
     private String department;
     @Column(name = "salary")
     private int salary;
 
-    public Employee(){}
+    public Employee(){    }
 
     public Employee(int id, String name, String surname, String department, int salary) {
         this.id = id;

@@ -1,5 +1,5 @@
 # CRUD приложение на Spring MVC с применением Hibernate и AOP
-### Я использовал зависимости через XML file, базу данных mySQL, Spring MVC, view file JSP
+### Я использовал зависимости через XML file, базу данных mySQL, Spring MVC, view file JSP.
 
 --- 
 * Technology stack:
